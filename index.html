@@ -58,6 +58,47 @@
     "knowsAbout": ["Civil Engineering", "Structural Design", "Urban Planning", "Python", "AutoCAD", "Revit", "ETABS", "AI Enthusiast"]
   }
   </script>
+  <style>
+/* AI-Assisted Workflow section */
+.ai-workflow{
+  --aw-bg:#f6f8fb; --aw-card:#ffffff; --aw-text:#0b0f19; --aw-muted:#52607a;
+  --aw-border:#e2e8f0; --aw-accent:#2563eb; --aw-accent2:#0ea5a4;
+  padding:80px 20px; background:var(--aw-bg); color:var(--aw-text);
+}
+@media (prefers-color-scheme:dark){
+  .ai-workflow{--aw-bg:#0b0f19; --aw-card:#121a2b; --aw-text:#eef2f9;
+    --aw-muted:#9aa8c2; --aw-border:#22304a; --aw-accent:#60a5fa; --aw-accent2:#2dd4bf;}
+}
+html[data-theme="dark"] .ai-workflow, html.dark .ai-workflow, body.dark .ai-workflow{
+  --aw-bg:#0b0f19; --aw-card:#121a2b; --aw-text:#eef2f9;
+  --aw-muted:#9aa8c2; --aw-border:#22304a; --aw-accent:#60a5fa; --aw-accent2:#2dd4bf;
+}
+.ai-workflow__inner{max-width:1100px; margin:0 auto;}
+.ai-workflow__head{text-align:center; max-width:680px; margin:0 auto 48px;}
+.ai-workflow__eyebrow{display:inline-block; font-size:.85rem; font-weight:600;
+  letter-spacing:.08em; color:var(--aw-accent); margin-bottom:10px;}
+.ai-workflow__title{font-size:clamp(1.7rem,4vw,2.4rem); margin:0 0 12px; line-height:1.25;}
+.ai-workflow__sub{color:var(--aw-muted); margin:0; line-height:1.8;}
+.ai-workflow__grid{display:grid; gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+.aw-card{position:relative; overflow:hidden; background:var(--aw-card);
+  border:1px solid var(--aw-border); border-radius:18px; padding:28px 24px;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
+.aw-card::before{content:""; position:absolute; inset-inline:0; top:0; height:4px;
+  background:linear-gradient(90deg,var(--aw-accent),var(--aw-accent2));}
+.aw-card:hover{transform:translateY(-6px); border-color:var(--aw-accent);
+  box-shadow:0 18px 40px rgba(37,99,235,.15);}
+.aw-card__icon{width:52px; height:52px; border-radius:14px; display:grid; place-items:center;
+  color:#fff; background:linear-gradient(135deg,var(--aw-accent),var(--aw-accent2)); margin-bottom:18px;}
+.aw-card__icon svg{width:26px; height:26px;}
+.aw-card h3{font-size:1.2rem; margin:0 0 10px;}
+.aw-card p{color:var(--aw-muted); line-height:1.8; margin:0 0 16px;}
+.aw-tags{display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:0; list-style:none;}
+.aw-tags li{font-size:.78rem; padding:4px 10px; border-radius:999px;
+  border:1px solid var(--aw-border); color:var(--aw-muted);}
+@media (prefers-reduced-motion:reduce){.aw-card{transition:none;} .aw-card:hover{transform:none;}}
+</style>
+
 </head>
 
 <body>
@@ -86,6 +127,7 @@
             <li class="nav-item"><a href="#certifications" class="nav-link">الخبرات</a></li>
             <li class="nav-item"><a href="#portfolio" class="nav-link">المسيرة المهنية</a></li>
             <li class="nav-item"><a href="#technologies" class="nav-link">التقنيات</a></li>
+            <li class="nav-item"><a href="#ai-workflow" class="nav-link">سير العمل</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">اتصل بنا</a></li>
           </ul>
         </div>
@@ -535,6 +577,37 @@
       </div>
     </section>
     <!--===== Technologies Section End =====-->
+<!--===== AI Workflow Section Start =====-->
+<section id="ai-workflow" class="ai-workflow" dir="rtl" aria-labelledby="aw-title">
+  <div class="ai-workflow__inner">
+    <header class="ai-workflow__head">
+      <span class="ai-workflow__eyebrow">AI-ASSISTED WORKFLOW</span>
+      <h2 id="aw-title" class="ai-workflow__title">سير العمل بمساعدة الذكاء الاصطناعي</h2>
+      <p class="ai-workflow__sub">القرار الهندسي أولاً، والذكاء الاصطناعي لتسريع المهام المتكررة ورفع دقة المخرجات.</p>
+    </header>
+    <div class="ai-workflow__grid">
+      <article class="aw-card">
+        <div class="aw-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3>أتمتة بايثون</h3>
+        <p>سكربتات بايثون لتنظيف وتحليل وتصور البيانات المكانية وبيانات مشاريع التخطيط العمراني، مع معالجة القيم الناقصة والصيغ غير المنتظمة.</p>
+        <ul class="aw-tags"><li>Python</li><li>GIS</li><li>تنظيف البيانات</li></ul>
+      </article>
+      <article class="aw-card">
+        <div class="aw-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 7 8M12 5c-1 4-4 7-8 8M14 21l4-9 4 9M15.5 18h5"/></svg></div>
+        <h3>الترجمة بمساعدة الذكاء الاصطناعي</h3>
+        <p>ترجمة تقنية بين العربية والإنكليزية للتقارير والمواصفات الهندسية، بمصطلحات إنشائية دقيقة ومراجعة هندسية قبل التسليم.</p>
+        <ul class="aw-tags"><li>عربي ⇄ English</li><li>المصطلحات الإنشائية</li><li>مراجعة هندسية</li></ul>
+      </article>
+      <article class="aw-card">
+        <div class="aw-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></div>
+        <h3>النمذجة ثلاثية الأبعاد (Real-to-Sim)</h3>
+        <p>تحويل المواقع الحقيقية إلى نماذج ثلاثية الأبعاد دقيقة باستخدام AutoCAD وRevit، كأساس لبيئات المحاكاة والتوأم الرقمي.</p>
+        <ul class="aw-tags"><li>AutoCAD</li><li>Revit</li><li>التوأم الرقمي</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!--===== AI Workflow Section End =====-->
 
     <!--===== Contact Section Start =====-->
     <section class="contact-section section-padding" id="contact">
